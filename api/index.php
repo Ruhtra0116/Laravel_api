@@ -1,8 +1,8 @@
 <?php
  
 // Load the Laravel application
-require _DIR_ . '/../vendor/autoload.php';
-$app = require_once _DIR_ . '/../bootstrap/app.php';
+require __DIR__ . '/../vendor/autoload.php';
+$app = require_once __DIR__ . '/../bootstrap/app.php';
  
 // Run the application
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
