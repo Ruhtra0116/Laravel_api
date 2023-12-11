@@ -21,6 +21,7 @@ use App\Http\Controllers\Simple;
 |
 */
 //public routes
+Route::get('/register', [AuthController::class, 'index']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
