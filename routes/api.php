@@ -9,7 +9,7 @@ use App\Http\Controllers\LikeController;
 
 use App\Http\Controllers\Simple;
 
-Route::get('/data',[Simple::class,'index']);
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -29,6 +29,7 @@ Route::group(['middleware' => ['auth:sanctum']],function(){
 
 
     //user
+    Route::get('/data',[Simple::class,'index']);
     Route::get('/user', [AuthController::class, 'user']);
     Route::put('/user', [AuthController::class, 'update']);
     Route::post('/logout', [AuthController::class, 'logout']);
